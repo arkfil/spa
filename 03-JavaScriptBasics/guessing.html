@@ -8,14 +8,35 @@
 		<h1>Try to guess</h1>
 
 		<script>
+			var isWinner;
 			// read user's number (popup window)
+			var userNb = prompt("Your number:");
 			
-			// create a random number
+				// create a random number
+				var modelNb = parseInt((1+Math.random()*5));				
 			
-			// compare the numbers
+				// compare the numbers
+				if (userNb==modelNb){
+	  				isWinner=true;
+	 			}else{
+					isWinner=false;
+				}		
+				// show results (popup window)
+				if(isWinner){			
+					alert("You won!");			
+				}else{
+					alert("Ya' ar' loser! The correct number was:" + modelNb);			
+				}
 			
-			// show results (popup window)
-			
+
+/*
+    var x;
+    var name=prompt("Please enter your name","Harry Potter");
+    if (name!=null){
+       x="Hello " + name + "! How are you today?";
+      alert(x);
+   }*/
+
 		</script>
 	</body>
 </html>
