@@ -7,6 +7,25 @@
 	<body>
 		<h1>Create mobile phone</h1>
 		<script>
+			
+			var myPhone{
+				phoneName: "Sony",
+				memory: "3k",
+				haveBluetooth: true,
+				transmision: ["3G", "4G", "LTE"],
+				size: {size: "143,00 x 69,00 x 7,90 mm", weight: 153},
+								
+			};
+			
+			function getPhoneInfo() {
+				alert("Phone name"+ myPhone.phoneName+"\nAmount of memory: "+myPhone.memory+
+					"\nHave a bluetooth module?:"+ myPhone.haveBluetooth+ "\nTransmisions: "+
+					myPhone.transmision + "\nPhone Size: "+ myPhone.size.size + "\nPhone weight: "+
+					myPhone.size.weight);
+			}
+
+
 		</script>
+		<button onclick="getPhoneInfo()" type=button>Give me info</button>
 	</body>
 </html>
