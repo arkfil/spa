@@ -12,20 +12,33 @@
 			var tab = [null, null, null, null, null];
 			var i;
 
-			// assing random integers to array elements
+			console.log('Array elements:');
 			for (i = 0; i < tab.length; i++) {
-				// ...
+				tab[i] = parseInt(1+Math.random()*5);
+				console.log(tab[i]);
 			}
 
-			// show array elements
-			console.log('Array elements:');
-			// ...
-			
+
 			// check whether the array is ordered
-			// ...
+			var ordered=true;
+			i=1;
+			while(i<tab.length && ordered){
+				if(tab[i]>tab[i-1])
+					ordered=true;
+				else
+					ordered=false;
+			++i;	
+			}
 			
 			// display message: Array is ordered / unordered
-			// ...
+			if(ordered){
+				console.log("Ordered");
+			}else{
+				console.log("Unordered");
+			}
+
+
+
 		</script>
 	</body>
 </html>
