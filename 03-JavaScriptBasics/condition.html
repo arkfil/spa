@@ -13,8 +13,11 @@
 			var surname = "Filipowski";
 			var age = 23;
 
-			window.alert(name+ " " + surname + " " + 23);
-			console.log(name+ " " + surname + " " + 23);
+			var isOk = window.confirm(name+ " " + surname + " " + 23);
+			
+
+			if(isOk==true) console.log(name+ " " + surname + " " + 23);
+			else console.log("You've canceled");		
 		</script>
 	</body>
 </html>
