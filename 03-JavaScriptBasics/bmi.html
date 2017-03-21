@@ -6,14 +6,21 @@
 	</head>
 	<body>
 		<h1>BMI calculator</h1>
-		<p>Weight (kg):	<input type="text" name="weight"></p>
-		<p>Height (cm):	<input type="text" name="height"></p>
-		<button type="button">Calculate BMI</button>
-		<p>Your result is: ???</p>
+		<p>Weight (kg):	<input type="text" name="weight" id="weight"></p>
+		<p>Height (cm):	<input type="text" name="height" id = "height"></p>
+		<button type="button" onClick="calculate();">Calculate BMI</button>
+		<p id="p1">Your result is: ???</p>
 		
 		<script>
 			// a JavaScript code here ...
-			
+			function calculate(){
+				var weight = document.getElementById("weight").value;
+				var height = document.getElementById("height").value;
+
+				height/=100;
+				result = parseInt(weight)/(height*height);
+				document.getElementById("p1").innerHTML = "Your result is: " + (Math.round(result*100))/100;
+			}
 		</script>
 	</body>
 </html>
