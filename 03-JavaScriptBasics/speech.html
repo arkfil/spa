@@ -37,14 +37,20 @@
 								'odpowiednich warunków aktywizacji.', 'modelu rozwoju.', 'form oddziaływania.'
 							];
 				
-				// complete a JavaScript code here ...
-				// ...
+				var mySpeach="";
+				for(var i = 1;i<=5;++i)
+					mySpeach += first[n()] + " " + second[n()] + " " + third[n()] + " " + fourth[n()] + "\n";
 				
+				console.log(mySpeach);
 			}
 
 			// returns random integer from 0 to 9
 			function n() {
-				// ...
+				//var nb = Math.random()*9;
+				//console.log(nb+"\n");
+				//console.log(Math.round(nb)+"\n");				
+				return parseInt(Math.random()*9);
+			
 			}
 			
 		</script>
