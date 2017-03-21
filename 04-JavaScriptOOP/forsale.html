@@ -7,6 +7,67 @@
 	<body>
 		<h1>Houses for sale</h1>
 		<script>
+			function House(bedrooms,facilities,price,address,phone) {
+				this.bedrooms = bedrooms || 1;
+				this.facilities = facilities || [];
+				this.price = price || 0;
+				this.address = address || null;
+				this.phone = phone || "000-000-000";
+
+				this.changePrice = function(newPrice){
+					this.price = newPrice;
+				}
+
+				this.addFacility = function(newFacility){
+					facilities.push(newFacility);
+				}
+
+				this.description = function(){
+					var descryption = "Number of bedrooms: " + bedrooms + "\n";
+					descryption+="Facilities: \n"
+					for(var i=0;i<this.facilities.length;++i)
+						descryption=descryption +"          " + this.facilities[i] + "\n";
+					descryption=descryption + "Price: " + this.price + "\n";
+					descryption=descryption+"Address: " + this.address.city + 
+							", " + this.address.street + ", " + 
+							this.address.houseNb + "\n";
+					return descryption;
+				}
+			}
+
+			var houses = [];
+			
+			houses[0] = new House(3,["garden","garage","pool"],112,{city: "Warsaw",
+					street: "ul. Juliana", houseNb: 11}, "111-222-333");
+			houses[1] = new House(5,["bout","pool","no women no cry"],255,{city: "Cracow",
+					street: "ul. Matejki", houseNb: 133}, "333-222-111");
+			houses[2] = new House(2,["garage","garden","selfie stick"],121,{city: "Cracow",
+					street: "ul. Stulorowa", houseNb: 10}, "112-132-113");
+			houses[3] = new House(11,["pool","bout"],123,{city: "Warsaw",
+					street: "ul. Jana Przerorozaraba", houseNb: 127}, "321-212-213");	
+			houses[4] = new House(8,["pool","bout","cupboard","garden"],123,{city: "Warsaw",
+					street: "ul. Ferdynanda Kiepskiego", houseNb: 133}, "331-001-013");	
+
+
+			for(var j=0;j<houses.length;++j)
+				console.log(houses[j].description());
+
+			houses[2].price = 321;
+			houses[4].price = 444;
+
+			houses[0].facilities.push("White mouses");
+			houses[0].facilities.push("horse");
+
+			houses[2].facilities.push("Printer");
+
+			houses[4].facilities.push("Hammer Shop");
+			houses[4].facilities.push("Cheap and Dirty trees");
+			
+			console.log("\n /************************************************************************************************** / \n")
+			for(var j=0;j<houses.length;++j)
+				console.log(houses[j].description());
+
+
 		</script>
 	</body>
 </html>
