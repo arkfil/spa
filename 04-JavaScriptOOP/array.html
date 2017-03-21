@@ -10,15 +10,46 @@
 			var myArray = {
 					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
 					min: function(){
-						// maximum value (sort the arr and take the last value, use a built-in function)
+						this.arr.sort(function(a, b){return a-b});
+						return this.arr[this.arr.length-1];						
 					},		
-					max: function(){},		// look at the min method comment
-					avg: function(){},		// avarage value
-					lth: function(val){}	// the number of arr values less than 'val'
+					max: function(){
+						this.arr.sort(function(a, b){return a-b});
+						return this.arr[0];
+					},
+					avg: function(){
+						var tempSumEventualyAvg=0;
+						for(var i=0;i<=this.arr.length-1;++i)
+							tempSumEventualyAvg+=this.arr[i];
+
+						return tempSumEventualyAvg/this.arr.length;							
+					},
+
+					lth: function(val){
+						this.arr.sort(function(a, b){return a-b});
+						
+							var progress=true;
+							var nbOfLower=0;						
+							while(progress){
+								if(this.arr[nbOfLower]<val){
+									progress=true;
+									++nbOfLower;
+								}else
+									progress=false;						
+							}
+							return nbOfLower;
+					}
 			};
 			
-			// display results (min,max,avg,lth) in the console
-			// ...
+			console.log("Minimum in the arr: " + myArray.min());
+			console.log("Maximum in the arr: " + myArray.max());
+			console.log("Average of arr elements: " + myArray.avg());
+			console.log("Number of elements lower than 3: " + myArray.lth(3));
+			console.log("Number of elements lower than 99: " + myArray.lth(99));
+			console.log("Number of elements lower than 235: " + myArray.lth(235));
+			console.log("Number of elements lower than 33: " + myArray.lth(33));
+			
+				
 		</script>
 	</body>
 </html>
