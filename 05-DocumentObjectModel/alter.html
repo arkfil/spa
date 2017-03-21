@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h1>Another Brick in the Wall</h1>
+		<h1 id="titl" onClick = "func();">Another Brick in the Wall</h1>
 		<h3>Pink Floyd</h3>
 		<p>We don't need no education<br>
 		We don't need no thought control<br>
@@ -21,7 +21,11 @@
 		
 		<script>
 			// a JavaScript code here ...
-			
+			function func(){
+				var title = document.getElementById("titl");
+				title.innerHTML="Another Brick in the Wall Part 2";
+				
+			}
 		</script>
 	</body>
 </html>
