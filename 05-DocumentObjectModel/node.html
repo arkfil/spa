@@ -3,11 +3,44 @@
 	<head>
 		<title>Create DOM elements</title>
 		<meta charset="UTF-8">
+		<style>
+			table {
+				border-collapse: collapse;
+				 
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				text-align: left;
+				padding: 12px;
+			}
+		</style>
+
 	</head>
 	<body>
-		<script>
-			// a JavaScript code here ...
-			
-		</script>
+
 	</body>
+
+
+
+
+
+
+
+
+
+<script>
+			
+			var div = document.createElement("div");
+
+			div.innerHTML = "<table style='width:40%'><tr bgcolor='grey'> <th>Email</th> <th>Connecting to the internet</th> </tr>"+
+			"<tr> <td>receive/get/open an email</td><td>use/access/log onto the Internet</td></tr>"+
+			"<tr><td>exchange email addresses</td><td>access/connect to/locate the server</td></tr>"+
+			"<tr><td>open/send/contain an attachment</td><td>browse/surf/search/scour the Internet</td></tr>"+
+			"<tr><td>open/check your inbox</td><td>install/use/configure a firewall</td></tr>"+		
+			"</table>";			
+			document.body.appendChild(div);
+
+		
+		</script>
 </html>
