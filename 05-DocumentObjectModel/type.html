@@ -20,10 +20,23 @@
 		Przeciw nim sterczy biała, wąska, zaostrzona,<br>
 		Jak głaz bodzący morze, reduta Ordona.</p>
 		
-		<textarea rows="15" cols="50"></textarea><br>
+		<textarea id="txt" onkeyup="setTimeout(showResoults,30000);" rows="15" cols="50"></textarea><br>
 		
 		<script>
-			// a JavaScript code here ...
+			var trigger=true;
+			
+			function showResoults(){
+				if(trigger){
+					var resoultText = document.getElementById("txt").value;
+					resoultText = resoultText.replace(/(^\s*)|(\s*$)/gi,"");//exclude  start and end white-space
+	  				resoultText = resoultText.replace(/[ ]{2,}/gi," ");//2 or more space to 1
+	   				resoultText = resoultText.replace(/\n /,"\n"); // exclude newline with a start spacing
+					var resoult = resoultText.split(' ').length; 
+				
+					trigger=false;
+					alert('You retyped around: ' + resoult + " words");
+				}
+			}
 			
 		</script>
 		
