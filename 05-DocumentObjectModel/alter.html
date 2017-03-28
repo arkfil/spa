@@ -3,11 +3,18 @@
 	<head>
 		<title>Change colour</title>
 		<meta charset="UTF-8">
+		<style>
+			body {
+				height:100%;
+				width:100%;
+			}
+		</style>
 	</head>
-	<body>
-		<h1 id="titl" onClick = "func();">Another Brick in the Wall</h1>
-		<h3>Pink Floyd</h3>
-		<p>We don't need no education<br>
+	
+	<body id="pBody" onClick="changBackgr2Yell()">
+		<h1 id="title" onClick = "addPart2();" >Another Brick in the Wall</h1>
+		<h3 id="description" onClick = "hideOrShow();">Pink Floyd</h3>
+		<p id="tekst" onClick = "chFontType();" onCopy="showCopyright();" >We don't need no education<br>
 		We don't need no thought control<br>
 		No dark sarcasm in the classroom<br>
 		Teachers leave them kids alone<br>
@@ -15,17 +22,47 @@
 		All in all it's just another brick in the wall<br>
 		All in all you're just another brick in the wall</p>
 		
-		<p style="visibility: hidden;">Pink Floyd were an English rock band formed in London.<br>
+		<p id="opis" style="visibility: hidden;" onClick = "showHidePicture();" >Pink Floyd were an English rock band formed in London.<br>
 		They achieved international acclaim with their progressive<br>
 		and psychedelic music.</p>
 		
+		<img id="obraz" style="visibility: hidden;" src="https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg" />
+		
+		
 		<script>
-			// a JavaScript code here ...
-			function func(){
-				var title = document.getElementById("titl");
-				title.innerHTML="Another Brick in the Wall Part 2";
-				
+			
+			
+			function addPart2() {
+				document.getElementById("title").innerHTML = "Another Brick in the Wall Part2";
+			}			
+			function hideOrShow() {
+
+				var rOpis = document.getElementById('opis');
+					if (rOpis.style.visibility === 'hidden') {
+					rOpis.style.visibility = 'visible';
+				} else {
+					rOpis.style.visibility = 'hidden';
+				}
 			}
+			function chFontType() {
+				document.getElementById("tekst").style.fontStyle = "italic";
+			}
+			function changBackgr2Yell() {
+				document.getElementById("pBody").style.backgroundColor = 'yellow';
+			}
+			function showCopyright() {
+				window.alert("Copyright (c) 1999, All Rights Reserved");
+			}
+			function showHidePicture() {
+				var pic = document.getElementById('obraz');
+					if (pic.style.visibility === 'hidden') {
+					pic.style.visibility = 'visible';
+				} else {
+					pic.style.visibility = 'hidden';
+				}
+			}
+
 		</script>
+	</div>	
 	</body>
 </html>
