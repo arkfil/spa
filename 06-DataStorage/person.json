@@ -1,0 +1,52 @@
+{
+  "name": "Arkadiusz",
+  "surname": "Filipowski",
+  "age": 23,
+  "gender": "male",
+  "email": "arek@arek.arek",
+  "phone":{
+    "landline": 123456789,
+    "mobile": 7654321
+  },
+  "address":{
+    "street": "ul. Kijowa",
+    "home-number": 32,
+    "postal-code": "34-442",
+    "city": "London"
+  },
+  "interests":[
+  "football",
+  "running",
+  "programming"
+  ],
+  "family":{
+    "spouse": {
+      "name": "Ariana",
+      "surname": "Szoszon"
+    },
+    "childerns":[
+      {
+        "name": "Ferret",
+        "surname": "Jonnet",
+        "gender": "male",
+	"age":12,
+        "interests":[
+          "flying",
+          "nananaing"
+        ]
+      },
+      {
+        "name": "Gwineg",
+        "surname": "Johanes",
+        "gender": "female",
+	"age":9,
+        "interests":[
+          "spying",
+          "chatting"
+        ]
+      }
+    ]
+    
+  }
+  
+}

@@ -1,0 +1,154 @@
+{
+  "person1":{
+    "name": "Arkadiusz",
+    "surname": "Filipowski",
+    "age": 23,
+    "gender": "male",
+    "email": "arek@arek.arek",
+    "phone":{
+      "landline": 123456789,
+      "mobile": 7654321
+    },
+    "address":{
+      "street": "ul. Kijowa",
+      "home-number": 32,
+      "postal-code": "34-442",
+      "city": "London"
+    },
+    "interests":[
+    "football",
+    "running",
+    "programming"
+    ],
+    "family":{
+      "spouse": {
+        "name": "Ariana",
+        "surname": "Szoszon"
+      },
+      "childerns":[
+        {
+          "name": "Ferret",
+          "surname": "Jonnet",
+          "gender": "male",
+          "age":22,
+          "interests":[
+            "flying",
+            "nananaing"
+          ]
+        },
+        {
+          "name": "Gwineg",
+          "surname": "Johanes",
+          "gender": "female",
+          "age":12,
+          "interests":[
+            "spying",
+            "chatting"
+          ]
+        }
+      ]
+      
+    }
+  },
+    "person2":{
+    "name": "Dararek",
+    "surname": "Kleryk",
+    "age": 59,
+    "gender": "male",
+    "email": "arek@arek.arek",
+    "phone":{
+      "landline": 123456789,
+      "mobile": 7654321
+    },
+    "address":{
+      "street": "ul. Kijowa",
+      "home-number": 32,
+      "postal-code": "34-442",
+      "city": "London"
+    },
+    "interests":[
+    "running",
+    "ehhing"
+    ],
+    "family":{
+      "spouse": {
+        "name": "Ferala",
+        "surname": "Koszczyn"
+      },
+      "childerns":[
+        {
+          "name": "Derek",
+          "surname": "Nonek",
+          "gender": "male",
+          "age":11,
+          "interests":[
+            "flying",
+            "itching",
+            "nananaing"
+          ]
+        },
+        {
+          "name": "Gwineg",
+          "surname": "Johanes",
+          "gender": "male",
+          "age":9,
+          "interests":[
+            "Ohohoing",
+            "Santa Clouseing"
+          ]
+        }
+      ]
+    }
+  },
+    "person3":{
+    "name": "Bartosz",
+    "surname": "Showek",
+    "age": 33,
+    "gender": "male",
+    "email": "narow@kolo.arek",
+    "phone":{
+      "landline": 987123987,
+      "mobile": 12398721
+    },
+    "address":{
+      "street": "ul. Kijowa",
+      "home-number": 44,
+      "postal-code": "12-442",
+      "city": "Krakow"
+    },
+    "interests":[
+    "Nothing",
+    "Watching TV",
+    "Loling"
+    ],
+    "family":{
+      "spouse": {
+        "name": "Maria",
+        "surname": "Szenszyl"
+      },
+      "childerns":[
+        {
+          "name": "Derefer",
+          "surname": "Hander",
+          "gender": "female",
+          "age":22,
+          "interests":[
+            "hokey",
+            "swimming"
+          ]
+        },
+        {
+          "name": "Monday",
+          "surname": "Friday",
+          "gender": "male",
+          "age":28,
+          "interests":[
+            "herwer",
+            "nontouching"
+          ]
+        }
+      ]
+      
+    }
+  }
+}
