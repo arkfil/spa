@@ -3,7 +3,8 @@
 	<head>
 		<title>Employee</title>
 		<meta charset="UTF-8">
-		<script src="http://code.jquery.com/jquery-git2.js"></script>
+		<!-- <script src="http://code.jquery.com/jquery-git2.js"></script> -->
+		<script src="./jquery-3.1.1.min.js"></script>
 	</head>
 	<body>
 		<h1>Employee</h1>
@@ -14,9 +15,16 @@
 		
 			$.getJSON("./employee.json", function(json) {
 				
-				console.log('{\nuserID: ' + json.userId);
-
-
+				console.log(	"{\nuserID: " + json.userId + 
+						"\njobTitleName: " + json.jobTitleName +
+						"\nfirstName: " + json.firstName +
+						"\nlastName: " + json.lastName +
+						"\npreferredFullName: " + json.preferredFullName +
+						"\nemployeeCode: " + json.employeeCode +
+						"\nphoneNumber: " + json.phoneNumber +
+						"\nemailAddress: " + json.emailAddress + "\n}"
+				);
+												
 
 
 
